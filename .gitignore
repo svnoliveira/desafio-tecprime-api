@@ -1,0 +1,20 @@
+venv
+__pycache__
+.vscode
+db.sqlite3
+.flake8
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Django
+*.sqlite3
+staticfiles/
+
+# Gunicorn
+gunicorn.ctl
+
+# Env
+.env
