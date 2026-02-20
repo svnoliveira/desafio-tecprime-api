@@ -85,3 +85,8 @@ Exemplo de retorno:
 |--------|------|-----------|------|
 | `GET` `POST` | [/api/orders/](http://localhost:8000/api/orders/) | Lista e cria ordens do usuário logado | ✅ |
 | `GET` `PUT` `DELETE` | [/api/orders/{id}/](http://localhost:8000/api/orders/{id}/) | Detalha, edita ou deleta uma ordem | ✅ |
+
+
+
+###  Decisões e comentários
+> Escolha pelo Python Django se deu pela rapidez de desenvolvimento e maior familiaridade com a estrutura, optei por adicionar autenticação e utilizar os padrões mais atuais de validação, principalmente a questão dos tokens, que para maior segurança, foram desenvolvidos para receber, validar e retornar cookies, altamente compatível com autenticação no front-end NEXT.js, com isso não há trasnsmissão insegura de tokens e grande parte da requisição chega automáticamente, como o usuário. Tambem optei por não desenvolver uma rota com refresh, apenas por questão de tempo, apenas aumentando a vida do token e do cookie de autenticação, tambem excluí a validação de estoque, pois os dados não são reais e tambem por uma questão de tempo. A decisão pela build com docker foi pela maior facilidade em utilizar o Python, que não estava na lista de tecnologias frequentemente utilizada pela empresa, mas traria um ótimo resultado, um ponto a melhorar se houvessse mais tempo seria adicionar campo de valor no objeto de "order", par facilitar a listagem no front-end, rota de refresh para tokens e validação de estoque como mencionado anteriormente.
